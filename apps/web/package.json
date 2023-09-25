@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "docker-build": "cd ../../ && docker build --build-arg APP_NAME=web -t web -f ./apps/web/Dockerfile .",
+    "docker-run": "docker run -d --name web -p 8080:8080 web:latest"
   },
   "dependencies": {
     "next": "^13.4.19",

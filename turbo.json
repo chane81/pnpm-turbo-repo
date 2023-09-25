@@ -10,6 +10,12 @@
     "dev": {
       "cache": false,
       "persistent": true
+    },
+    "docker-build": {
+      "cache": false
+    },
+    "docker-run": {
+      "cache": false
     }
   }
 }

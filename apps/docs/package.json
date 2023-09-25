@@ -6,7 +6,9 @@
     "dev": "next dev --port 3001",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "docker-build": "cd ../../ && docker build --build-arg APP_NAME=docs -t docs -f ./apps/docs/Dockerfile .",
+    "docker-run": "docker run -d --name docs -p 8081:8080 docs:latest"
   },
   "dependencies": {
     "next": "^13.4.19",
