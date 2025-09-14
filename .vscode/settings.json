@@ -4,6 +4,7 @@
       "mode": "auto"
     }
   ],
+  "eslint.runtime": "node",
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit",
